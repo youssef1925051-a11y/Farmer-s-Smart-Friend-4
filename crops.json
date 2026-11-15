@@ -1,0 +1,26 @@
+{
+  "_comment": "خصائص المحاصيل - قيم مرجعية تقريبية (FAO-56 / FAO-29 / وزارة الزراعة المصرية). الوحدة الزراعية تقدر تعدّلها: sow=شهور الزراعة، days=طول الموسم، stages=[بداية,نمو,منتصف,نضج] بالأيام، kc=[ini,mid,end]، tmin/topt/tmax=حرارة النمو °م، water=مم/موسم، salt=حد الملوحة dS/m، n=تأثير النيتروجين (+1 مثبّت، -1 مستنزف)، root=عمق الجذر م، p=نسبة الاستنزاف المسموحة، value=العائد النسبي 1-5",
+  "crops": [
+    {"id":"wheat","name":"القمح","family":"Poaceae","group":"cereal","sow":[11,12],"days":150,"stages":[20,30,60,40],"kc":[0.3,1.15,0.35],"tmin":4,"topt":[12,24],"tmax":32,"water":450,"salt":6.0,"legume":false,"n":-1,"root":1.2,"p":0.55,"value":4},
+    {"id":"barley","name":"الشعير","family":"Poaceae","group":"cereal","sow":[11,12],"days":120,"stages":[15,25,50,30],"kc":[0.3,1.15,0.25],"tmin":4,"topt":[12,24],"tmax":32,"water":350,"salt":8.0,"legume":false,"n":-1,"root":1.0,"p":0.55,"value":3},
+    {"id":"berseem","name":"البرسيم","family":"Fabaceae","group":"legume","sow":[10,11],"days":180,"stages":[10,30,100,40],"kc":[0.4,0.95,0.9],"tmin":5,"topt":[12,26],"tmax":33,"water":600,"salt":1.5,"legume":true,"n":1,"root":1.0,"p":0.5,"value":3},
+    {"id":"faba","name":"الفول البلدي","family":"Fabaceae","group":"legume","sow":[10,11],"days":145,"stages":[25,35,55,30],"kc":[0.5,1.15,0.3],"tmin":5,"topt":[10,22],"tmax":30,"water":400,"salt":1.6,"legume":true,"n":1,"root":0.8,"p":0.45,"value":4},
+    {"id":"sugarbeet","name":"بنجر السكر","family":"Amaranthaceae","group":"root","sow":[9,10,11],"days":180,"stages":[30,45,60,45],"kc":[0.35,1.2,0.7],"tmin":5,"topt":[15,25],"tmax":33,"water":650,"salt":7.0,"legume":false,"n":0,"root":1.0,"p":0.55,"value":4},
+    {"id":"onion","name":"البصل","family":"Amaryllidaceae","group":"bulb","sow":[11,12,1],"days":150,"stages":[20,35,60,35],"kc":[0.7,1.05,0.75],"tmin":7,"topt":[13,24],"tmax":32,"water":450,"salt":1.2,"legume":false,"n":0,"root":0.4,"p":0.3,"value":5},
+    {"id":"potato","name":"البطاطس (الموسم الشتوي)","family":"Solanaceae","group":"solanaceae","sow":[12,1],"days":110,"stages":[25,30,35,20],"kc":[0.5,1.15,0.75],"tmin":8,"topt":[15,22],"tmax":30,"water":500,"salt":1.7,"legume":false,"n":-1,"root":0.4,"p":0.35,"value":5},
+    {"id":"tomato","name":"الطماطم","family":"Solanaceae","group":"solanaceae","sow":[1,2,3,7,8],"days":130,"stages":[30,40,40,20],"kc":[0.6,1.15,0.8],"tmin":11,"topt":[18,27],"tmax":35,"water":550,"salt":2.5,"legume":false,"n":-1,"root":0.7,"p":0.4,"value":5},
+    {"id":"maize","name":"الذرة الشامية","family":"Poaceae","group":"cereal","sow":[4,5,6],"days":120,"stages":[20,35,40,25],"kc":[0.3,1.2,0.6],"tmin":12,"topt":[20,30],"tmax":38,"water":550,"salt":1.7,"legume":false,"n":-1,"root":1.0,"p":0.55,"value":3},
+    {"id":"rice","name":"الأرز","family":"Poaceae","group":"cereal","sow":[5,6],"days":140,"stages":[30,30,60,20],"kc":[1.05,1.2,0.9],"tmin":16,"topt":[22,32],"tmax":38,"water":1100,"salt":3.0,"legume":false,"n":-1,"root":0.5,"p":0.2,"value":3},
+    {"id":"cotton","name":"القطن","family":"Malvaceae","group":"fiber","sow":[3,4],"days":180,"stages":[30,50,55,45],"kc":[0.35,1.15,0.7],"tmin":15,"topt":[22,32],"tmax":38,"water":700,"salt":7.7,"legume":false,"n":-1,"root":1.2,"p":0.65,"value":4},
+    {"id":"sesame","name":"السمسم","family":"Pedaliaceae","group":"oil","sow":[5,6],"days":100,"stages":[20,30,30,20],"kc":[0.35,1.1,0.25],"tmin":18,"topt":[24,32],"tmax":38,"water":350,"salt":3.0,"legume":false,"n":0,"root":1.0,"p":0.6,"value":3},
+    {"id":"sorghum","name":"الذرة الرفيعة","family":"Poaceae","group":"cereal","sow":[4,5,6],"days":110,"stages":[20,35,40,15],"kc":[0.3,1.0,0.55],"tmin":14,"topt":[22,32],"tmax":40,"water":400,"salt":6.8,"legume":false,"n":-1,"root":1.2,"p":0.55,"value":2},
+    {"id":"peanut","name":"الفول السوداني","family":"Fabaceae","group":"legume","sow":[4,5],"days":130,"stages":[25,35,45,25],"kc":[0.4,1.15,0.6],"tmin":15,"topt":[22,30],"tmax":36,"water":500,"salt":3.2,"legume":true,"n":1,"root":0.8,"p":0.4,"value":4}
+  ],
+  "soils": {
+    "sand":       {"name":"رملية", "awc":80},
+    "sandy_loam": {"name":"رملية طميية", "awc":110},
+    "loam":       {"name":"طميية", "awc":150},
+    "clay_loam":  {"name":"طينية طميية", "awc":170},
+    "clay":       {"name":"طينية", "awc":180}
+  }
+}

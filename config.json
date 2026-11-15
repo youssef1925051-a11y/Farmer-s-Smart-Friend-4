@@ -1,0 +1,30 @@
+{
+  "server": { "host": "0.0.0.0", "http_port": 8080, "https_port": 8443, "open_browser": true },
+  "defaults": {
+    "lat": 30.0444, "lng": 31.2357,
+    "soil_type": "clay_loam", "salinity_ds_m": 2.0,
+    "irrigation_efficiency": 0.65, "application_rate_mm_h": 25,
+    "max_irrigation_mm": 50, "pump_flow_m3_h": 0
+  },
+  "alerts": {
+    "gust_kmh_warn": 45, "gust_kmh_severe": 60,
+    "rain_mm_warn": 2, "rain_mm_severe": 8,
+    "heat_c_warn": 40, "frost_c_warn": 4,
+    "auto_protect": true, "check_every_minutes": 15
+  },
+  "nasa": {
+    "power_base": "https://power.larc.nasa.gov/api/temporal",
+    "modis_base": "https://modis.ornl.gov/rst/api/v1",
+    "gibs_ndvi_layer": "MODIS_Terra_NDVI_8Day"
+  },
+  "forecast": { "base": "https://api.open-meteo.com/v1/forecast" },
+  "camera": { "stream_url": "", "port": 81, "stale_seconds": 20 },
+  "whatsapp": {
+    "phone_number_id": "", "access_token": "", "verify_token": "fsf-verify",
+    "template_name": "", "template_lang": "ar", "require_confirm": false
+  },
+  "ai": { "anthropic_api_key": "", "model": "claude-sonnet-5-5" },
+  "report_deadline_seconds": 40,
+  "default_device_id": "FSF-CAM-01",
+  "dashboard_pin": ""
+}
